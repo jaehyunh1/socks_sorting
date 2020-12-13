@@ -5,6 +5,13 @@ This project was contributed by 20170637 Hanseul Cho, 20160682 Jaehyun Ha.
 ## Usage
 Executive file is Train and Test.ipynb. 
 Also available in https://colab.research.google.com/drive/18u3Z5B762iNuSqlI9MlPr-c6L7HYENBz?usp=sharing.
+Demo clip on Colab:
+https://drive.google.com/file/d/1m3VTlNYRUnSBZBppDlcXMoq9B-uh4ulg/view?usp=sharing ,
+https://drive.google.com/file/d/1KaRdpTMFNf_8DTdkKnCxDsQqp4aST-Hw/view?usp=sharing
+
+The dataset we have used:
+https://drive.google.com/drive/folders/1eWTDm0Cx5G7-yu47eaFrxyCCSyNloWzt?usp=sharing
+(In the Colab demo, you can only use the image files in this link, because we did not yet implemented the code about registering new socks.)
 
 Another version of demo was developing, in the structure of React & Node.js & Python.
 Connecting Python file data to Node.js with Pythonshell was successful.
