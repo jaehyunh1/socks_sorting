@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import ImageUploader from './component/index.js';
 import './App.css';
 
