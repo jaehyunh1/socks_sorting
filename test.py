@@ -4,6 +4,8 @@ from PIL import Image
 from glob import glob
 import torch
 import torchvision
+import subprocess
+import shlex
 from collections import Counter
 
 from modules.image_util import imShow, imshow, infer_image_with_EN, transform_img
@@ -43,7 +45,13 @@ width, height = img.size
 
 ### YOLO Detection ###
 os.chdir("./darknet")
-os.system(f"./darknet detector test {yolo_data} {yolo_cfg} {yolo_weights} {image_path} -ext_output -dont_show -out {yolo_result_json}")
+#import subprocess
+#import shlex
+text = f"./darknet detector test {yolo_data} {yolo_cfg} {yolo_weights} {image_path} -ext_output -dont_show -out {yolo_result_json}"
+process = subprocess.Popen(shlex.split(text),
+                     stdout=subprocess.PIPE, 
+                     stderr=subprocess.PIPE)
+stdout, _ = process.communicate()
 print("Detected Socks By Yolo:")
 imShow("predictions.jpg") ###########
 with open(yolo_result_json, "r") as f:

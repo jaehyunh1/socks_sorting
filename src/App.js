@@ -5,9 +5,15 @@ import './App.css';
 export default class App extends React.PureComponent{
   constructor(props) {
     super(props);
-    this.state = {
-      title: null
-    }
+    this.state = { pictures: [] };
+    this.onDrop = this.onDrop.bind(this);
+  }
+
+
+  onDrop(pictureFiles, pictureDataURLs) {
+    this.setState({
+      pictures: this.state.pictures.concat(pictureFiles)
+    });
   }
 
   componentDidMount() {
@@ -22,12 +28,12 @@ export default class App extends React.PureComponent{
             <h1>Socks matching</h1>
             <p>Upload your laundry image.</p>
             <div className="head">
-              {this.state.title? <h1>{this.state.title}</h1> : <h1>Upload</h1>}
+              {this.state.title?<h1>{this.state.title}</h1>:<h1>Upload</h1>}
             </div>
             <ImageUploader style={{ maxWidth: '500px', margin: "20px auto" }}
                            withPreview={true} />
         </div>
     );
-}
+  }
 }
 
