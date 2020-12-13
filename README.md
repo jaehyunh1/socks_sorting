@@ -5,6 +5,7 @@ This project was contributed by 20170637 Hanseul Cho, 20160682 Jaehyun Ha.
 ## Usage
 Executive file is Train and Test.ipynb. 
 Also available in https://colab.research.google.com/drive/18u3Z5B762iNuSqlI9MlPr-c6L7HYENBz?usp=sharing.
+
 Demo clip on Colab:
 https://drive.google.com/file/d/1m3VTlNYRUnSBZBppDlcXMoq9B-uh4ulg/view?usp=sharing ,
 https://drive.google.com/file/d/1KaRdpTMFNf_8DTdkKnCxDsQqp4aST-Hw/view?usp=sharing
